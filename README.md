@@ -1,0 +1,4 @@
+koier-core
+==========
+
+It-prosjekt
