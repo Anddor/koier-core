@@ -1,4 +1,4 @@
 //eksempelfil
 int tall = 0;
 
-String str = "foo"
+String str = "foo and bar"
