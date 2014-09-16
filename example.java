@@ -1,2 +1,4 @@
 //eksempelfil
-var int = 0;
+int tall = 0;
+
+String str = "foo"
