@@ -8,6 +8,7 @@ public class Koie implements java.io.Serializable {
 	//private double breddegrad;
 	private double kgVed;
 	private double antSenger;	
+	public String info;
 	
 	//Constructor
 	public Koie(String koieNavn, double kgVed, double antSenger){
@@ -43,6 +44,10 @@ public class Koie implements java.io.Serializable {
 
 	public void setAntSenger(double antSenger) {
 		this.antSenger = antSenger;
+	}
+	
+	public String getInfo() {
+		return info;
 	}
 	
 	
