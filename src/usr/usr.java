@@ -83,6 +83,7 @@ public class usr {
 
 	public void addInfo(Koie k) {
 		String info = k.getInfo();
+		System.out.println("Skriv info her: ");
 		Scanner sc = new Scanner(System.in);
 		info = info + sc.nextLine();
 		sc.close();

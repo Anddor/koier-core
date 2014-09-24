@@ -3,15 +3,21 @@ package koie;
 public class Koie implements java.io.Serializable {
 
 	
+	/**
+	 * 
+	 */
+	//private static final long serialVersionUID = 8011726356493345464L; //HVA ER DETTE!!!!
 	private String koieNavn;
 	//private double lengdegrad;
 	//private double breddegrad;
 	private double kgVed;
-	private double antSenger;	
+
 	public String info;
+
+	private int antSenger;	
 	
 	//Constructor
-	public Koie(String koieNavn, double kgVed, double antSenger){
+	public Koie(String koieNavn, double kgVed, int antSenger){
 		this.koieNavn = koieNavn;
 		this.kgVed = kgVed;
 		this.antSenger = antSenger;
@@ -42,7 +48,7 @@ public class Koie implements java.io.Serializable {
 		return antSenger;
 	}
 
-	public void setAntSenger(double antSenger) {
+	public void setAntSenger(int antSenger) {
 		this.antSenger = antSenger;
 	}
 	
