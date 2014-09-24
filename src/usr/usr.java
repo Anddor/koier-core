@@ -64,7 +64,7 @@ public class usr {
 	}
 	
 	@SuppressWarnings("finally")
-	public ArrayList<String> readFromFIle() throws IOException{
+	public ArrayList<String> readFromFile() throws IOException{
 		   BufferedReader br = new BufferedReader(new FileReader("/users/usr/usr.txt"));
 		   
 		   ArrayList<String> al = new ArrayList<String>();
