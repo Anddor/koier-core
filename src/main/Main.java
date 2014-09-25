@@ -28,9 +28,8 @@ public class Main {
 		koieListe.add(MauerTua);
 		
 		
-		new LagreKoier(path, koieListe);
-		
-		printKoier();
+		//new LagreKoier(path, koieListe);
+		system.out.println(BjoerneHula);
 		
 	}
 
