@@ -11,6 +11,9 @@ public class Koie implements java.io.Serializable {
 	//private double lengdegrad;
 	//private double breddegrad;
 	private double kgVed;
+
+	public String info;
+
 	private int antSenger;	
 	
 	//Constructor
@@ -47,6 +50,10 @@ public class Koie implements java.io.Serializable {
 
 	public void setAntSenger(int antSenger) {
 		this.antSenger = antSenger;
+	}
+	
+	public String getInfo() {
+		return info;
 	}
 	
 	

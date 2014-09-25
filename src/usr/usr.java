@@ -7,6 +7,9 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Scanner;
+
+import koie.Koie;
 
 public class usr {
 	
@@ -78,6 +81,13 @@ public class usr {
 		    }
 	}
 
+	public void addInfo(Koie k) {
+		String info = k.getInfo();
+		System.out.println("Skriv info her: ");
+		Scanner sc = new Scanner(System.in);
+		info = info + sc.nextLine();
+		sc.close();
+	}
 	
 	
 	public String getUsrname(){
