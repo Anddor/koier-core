@@ -21,15 +21,15 @@ public class Main {
 		//String path = filepath.toString();
 	
 		
-		Koie BjoerneHula = new Koie("Bj�rnehula", 7, 18);
-		Koie MauerTua = new Koie("MauerTua", 4, 14);
+		Koie bjoerneHula = new Koie("Bj�rnehula", 7, 18);
+		Koie mauerTua = new Koie("MauerTua", 4, 14);
 		
-		koieListe.add(BjoerneHula);
-		koieListe.add(MauerTua);
+		koieListe.add(bjoerneHula);
+		koieListe.add(mauerTua);
 		
 		
 		//new LagreKoier(path, koieListe);
-		system.out.println(BjoerneHula);
+		System.out.println(bjoerneHula);
 		
 	}
 
