@@ -25,6 +25,11 @@ public class Koie implements java.io.Serializable {
 		
 		
 	}
+	@Override
+	public String toString() {
+		String str = "[koieNavn=" + this.koieNavn() + " kgVed=" + this.kgVed + " antSenger=" + this.antSenger + "]";
+		return str;
+	}
 
 	
 	//Gettere og settere for alle variabler
