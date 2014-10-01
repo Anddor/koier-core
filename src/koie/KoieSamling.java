@@ -23,18 +23,12 @@ public class KoieSamling {
 			return true;
 		}
 	}
-	//Returns the koie object matching the name of the key
 	public Koie getKoieByName(String key) {
 		return koier.get(key);
 	}
-	
-	// Method returns a set of all the names of all the koie objects in the hashmap
 	public Set<String> getKoieNames() {
 		return koier.keySet();
 	}
-	
-	//Method loops through the entries in the hashmap.
-	//All the info from the koie objects are added to a String for return.
 	public String printKoieInfo() {
 		Collection<Koie> col = koier.values();
 		String str = "";
