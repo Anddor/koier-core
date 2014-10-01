@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.7250673854447439" prefHeight="342.0" prefWidth="754.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginApplicationController.ApplicationController">
+   <items>
+      <ImageView fitHeight="339.0" fitWidth="605.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@10417669_10203846823324432_5897630542103593041_n.jpg" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="391.0" prefWidth="345.0">
+         <children>
+            <Label fx:id="brukernavn" layoutX="16.0" layoutY="24.0" text="Brukernavn" />
+            <TextField fx:id="usrField" layoutX="14.0" layoutY="49.0" />
+            <Label fx:id="passord" layoutX="16.0" layoutY="91.0" text="Passord" />
+            <PasswordField fx:id="passField" layoutX="14.0" layoutY="120.0" />
+            <Button fx:id="btnLogin" layoutX="10.0" layoutY="163.0" mnemonicParsing="false" onAction="#validateInfo" text="Logg inn" />
+            <Button fx:id="btnUsrCreate" layoutX="10.0" layoutY="195.0" mnemonicParsing="false" text="Ny Bruker?" />
+            <Label fx:id="passWrong" layoutX="11.0" layoutY="240.0" prefHeight="17.0" prefWidth="93.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="usrWrong" layoutX="11.0" layoutY="281.0" prefHeight="17.0" prefWidth="93.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </items>
+</SplitPane>
