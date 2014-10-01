@@ -6,18 +6,31 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="usrField" prefHeight="377.0" prefWidth="373.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="applicationController.ApplicationController">
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
    <children>
-      <Button layoutX="215.0" layoutY="284.0" mnemonicParsing="false" text="Ny Bruker?" />
-      <Button layoutX="215.0" layoutY="345.0" mnemonicParsing="false" onAction="#validateInfo" text="Logg inn" />
-      <Label layoutX="26.0" layoutY="255.0" text="Brukernavn" />
-      <Label layoutX="26.0" layoutY="321.0" text="Passord" />
-      <PasswordField layoutX="14.0" layoutY="345.0" />
-      <ImageView fitHeight="185.0" fitWidth="244.0" layoutX="89.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@10417669_10203846823324432_5897630542103593041_n.jpg" />
-         </image>
-      </ImageView>
-      <TextField layoutX="15.0" layoutY="284.0" />
+      <Accordion layoutX="-603.0" layoutY="-568.0" prefHeight="606.0" prefWidth="567.0">
+        <panes>
+          <TitledPane animated="false" text="Her kan du logge deg inn">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="580.0" prefWidth="601.0">
+                     <children>
+                        <Button layoutX="269.0" layoutY="541.0" mnemonicParsing="false" text="Alt er klart og sånn? da trykker du på denne knappen. okai?" />
+                        <PasswordField layoutX="14.0" layoutY="488.0" prefHeight="25.0" prefWidth="255.0" />
+                        <Button layoutX="14.0" layoutY="541.0" mnemonicParsing="false" text="Har du ikke en bruker?" />
+                        <TextField layoutX="15.0" layoutY="443.0" prefHeight="25.0" prefWidth="254.0" />
+                        <Label layoutX="307.0" layoutY="438.0" text="Brukernavn kan du skrive i feltet til venstre " />
+                        <Label layoutX="307.0" layoutY="492.0" text="Passord kan du skrive i det feltet til venstre" />
+                        <ImageView fitHeight="430.0" fitWidth="567.0" layoutX="17.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@10417669_10203846823324432_5897630542103593041_n.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+        </panes>
+      </Accordion>
    </children>
 </AnchorPane>
