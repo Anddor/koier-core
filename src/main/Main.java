@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import com.sun.org.apache.bcel.internal.util.ClassLoader;
 
 import koie.Koie;
-import koie.KoieSamling;
 import lagring.LagreKoier;
 import lagring.LastKoier;
 
@@ -22,18 +21,15 @@ public class Main {
 		//String path = filepath.toString();
 	
 		
-		Koie bh = new Koie("Bj�rnehula", 7, 18);
-		Koie mt = new Koie("MauerTua", 4, 14);
+		Koie bjoerneHula = new Koie("Bj�rnehula", 7, 18);
+		Koie mauerTua = new Koie("MauerTua", 4, 14);
 		
-		KoieSamling koier = new KoieSamling();
-		koier.addKoie("Bjoernehula", bh);
-		koier.addKoie("Maurtua", mt);
-		
-		koier.addKoie("Klippekanten", new Koie("Klippekanten", 3, 8));
+		koieListe.add(bjoerneHula);
+		koieListe.add(mauerTua);
 		
 		
 		//new LagreKoier(path, koieListe);
-		System.out.println(koier.printKoieInfo());
+		System.out.println(bjoerneHula);
 		
 	}
 
