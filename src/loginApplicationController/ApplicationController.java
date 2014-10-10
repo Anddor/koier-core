@@ -1,18 +1,21 @@
 package loginApplicationController;
 
-import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.ResourceBundle;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import loginApplicationController.usr;
+import javafx.stage.Stage;
+
 
 public class ApplicationController implements Initializable {
 
@@ -38,25 +41,31 @@ public class ApplicationController implements Initializable {
 
 	
 	
-	public void validateInfo(ActionEvent event) throws IOException{
-		usrRead fileUsrs = new usrRead();
-		ArrayList<usr> usrs = fileUsrs.readFromFile();
-		String usr = usrField.getText();
-		String pass = passField.getText();
-		
-		for (int i = 0, n = usrs.size(); i<n; i++){
-			if (usr.equals(usrs.get(i).getUsrname())){
-				if (pass.equals(usrs.get(i).getPassword())){
-					System.out.println("Her burde noe skje: innlogging komplett");
-				} else {
-					passWrong();
-				}
-			} else {
-				usrWrong();
-			}
-			
+	public void validateInfo(ActionEvent event){
+		if(true){
+			showMenuApplication();
 		}
 	}
+	
+	public void showMenuApplication(){
+		Platform.runLater(new Runnable() {
+    		@Override
+            public void run() {
+    			try{
+    				Parent root = FXMLLoader.load(getClass().getResource("/menuApplication/gui.fxml"));
+    				Stage newStage = new Stage();
+    				Scene stageScene = new Scene(root);
+    				stageScene.getStylesheets().add(getClass().getResource("MenuApplication.css").toExternalForm());
+    				newStage.setScene(stageScene);
+    				newStage.show();	
+    			}catch(Exception e) {
+    				e.printStackTrace();
+    			}	
+	            
+    		}
+        });	
+	}
+	
 
 	private void usrWrong() {
 		usrWrong.setText("Feil brukernavn");

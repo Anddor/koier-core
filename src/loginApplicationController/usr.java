@@ -30,7 +30,7 @@ public class usr {
 		
 	}
 	
-	public void writeToFile(){
+/*	public void writeToFile(){
 		try {
 			String foo;
 			if(admin){
@@ -60,6 +60,7 @@ public class usr {
 		}
 	}
 	
+	
 	@SuppressWarnings("finally")
 	public ArrayList<String> readFromFile() throws IOException{
 		   BufferedReader br = new BufferedReader(new FileReader("/users/usr/usr.txt"));
@@ -77,7 +78,7 @@ public class usr {
 		        return al;
 		    }
 	}
-
+*/
 	
 	
 	public String getUsrname(){
